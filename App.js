@@ -1,20 +1,8 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { View } from 'react-native';
 
-// View -> UIView
+import WelcomeScreen from './app/screens/WelcomeScreen';
+
 export default function App() {
-	return (
-		<View style={styles.container}>
-			<Text>Hello React Native!</Text>
-		</View>
-	);
+	return <WelcomeScreen />;
 }
-
-const styles = StyleSheet.create({
-	container: {
-		flex: 1,
-		backgroundColor: '#fff',
-		alignItems: 'center',
-		justifyContent: 'center',
-	},
-});

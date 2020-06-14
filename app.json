@@ -1,29 +1,23 @@
 {
 	"expo": {
 		"name": "DoneWithIt",
-		"slug": "DoneWithIt",
-		"platforms": [
-			"ios",
-			"android",
-			"web"
-		],
+		"slug": "donewithit",
+		"platforms": ["ios", "android", "web"],
 		"version": "1.0.0",
 		"orientation": "portrait",
-		"icon": "./assets/icon.png",
+		"icon": "./app/assets/icon.png",
 		"splash": {
-			"image": "./assets/splash.png",
+			"image": "./app/assets/splash.png",
 			"resizeMode": "contain",
 			"backgroundColor": "#ffffff"
 		},
 		"updates": {
 			"fallbackToCacheTimeout": 0
 		},
-		"assetBundlePatterns": [
-			"**/*"
-		],
+		"assetBundlePatterns": ["**/*"],
 		"ios": {
 			"supportsTablet": true
 		},
-		" description": "A marketplace for selling the stuff you don't need anymore."
+		"description": "A marketplace for selling the stuff you don't need anymore."
 	}
 }
