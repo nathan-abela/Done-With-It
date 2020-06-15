@@ -10,7 +10,7 @@
         <a href="https://github.com/nathan-abela">
             <img src="https://img.shields.io/github/repo-size/nathan-abela/Done-With-It" alt="Repository Size Shield Badge"/>
         </a>
-        <a href="https://www.nuget.org/packages/Jellyfish/">
+        <a href="https://github.com/nathan-abela/">
             <img src="https://img.shields.io/npm/v/npm" alt="NPM Shield Badge"/>
         </a>
     </p>
