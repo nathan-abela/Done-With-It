@@ -1,5 +1,7 @@
 <p align="center">
-    <img src="./app/assets/logo-red.png" height="100"/>
+    <a href="https://expo.io/@nathanabela/donewithit">
+        <img src="./app/assets/logo-red.png" height="100" alt="Done With It Logo"/>
+    </a>
     <h1 align="center"> Done With It </h1>
     <p align="center">An application for selling stuff you do not need anymore.</p>
     <h3 align="center">🛠️</h3>
