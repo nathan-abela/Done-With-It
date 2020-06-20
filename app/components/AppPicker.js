@@ -2,19 +2,28 @@ import React, { useState } from "react";
 import { View, StyleSheet, TouchableWithoutFeedback, Modal, Button, FlatList } from "react-native";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 
-import Screen from "./Screen";
+// import Screen from "./Screen";
 import AppText from "./AppText";
 import PickerItem from "./PickerItem";
 
 import defaultStyles from "../config/styles";
 
-function AppPicker({ icon, items, onSelectItem, placeholder, selectedItem }) {
+function AppPicker({
+    icon,
+    items,
+    numberOfColumns = 1,
+    onSelectItem,
+    PickerItemComponent = PickerItem,
+    placeholder,
+    selectedItem,
+    width="100%",
+}) {
     const [modalVisible, setModalVisible] = useState(false);
 
     return (
         <>
             <TouchableWithoutFeedback onPress={() => setModalVisible(true)}>
-                <View style={styles.container}>
+                <View style={[styles.container, { width }]}>
                     {icon && (
                         <MaterialCommunityIcons
                         name={icon}
@@ -36,23 +45,26 @@ function AppPicker({ icon, items, onSelectItem, placeholder, selectedItem }) {
                     />
                 </View>
             </TouchableWithoutFeedback>
+
             <Modal visible={modalVisible} animationType="slide">
-                <Screen>
-                    <Button title="Close" onPress={() => setModalVisible(false)} />
-                    <FlatList
-                        data={items}
-                        keyExtractor={item => item.value.toString()}
-                        renderItem={({ item }) => (
-                            <PickerItem 
-                                label={item.label}
-                                onPress={() => {
-                                    setModalVisible(false);
-                                    onSelectItem(item);
-                                }}
-                            />
-                        )}
-                    />
-                </Screen>  
+                {/* Wrap Button and FlatList in <Screen> in case of iPhone issues - 'Close' getting hidden behind notch */}
+                {/* <Screen> */}
+                <Button title="Close" onPress={() => setModalVisible(false)} />
+                <FlatList
+                    data={items}
+                    keyExtractor={item => item.value.toString()}
+                    numColumns={numberOfColumns}
+                    renderItem={({ item }) => (
+                        <PickerItemComponent
+                            item={item}
+                            label={item.label}
+                            onPress={() => {
+                                setModalVisible(false);
+                                onSelectItem(item);
+                            }}
+                        />
+                    )}
+                />
             </Modal>
         </>
     );
@@ -63,7 +75,6 @@ const styles = StyleSheet.create({
         backgroundColor: defaultStyles.colors.light,
         borderRadius: 25,
         flexDirection: "row",
-        width: '100%',
         padding: 15,
         marginVertical: 10,
     },
