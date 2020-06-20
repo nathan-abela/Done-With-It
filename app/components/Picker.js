@@ -3,7 +3,7 @@ import { View, StyleSheet, TouchableWithoutFeedback, Modal, Button, FlatList } f
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 // import Screen from "./Screen";
-import AppText from "./AppText";
+import Text from "./Text";
 import PickerItem from "./PickerItem";
 
 import defaultStyles from "../config/styles";
@@ -33,9 +33,9 @@ function AppPicker({
                         />
                     )}
                     {selectedItem ? (
-                        <AppText style={styles.text}>{selectedItem.label}</AppText>
+                        <Text style={styles.text}>{selectedItem.label}</Text>
                     ) : (
-                        <AppText style={styles.placeholder}>{placeholder}</AppText>
+                        <Text style={styles.placeholder}>{placeholder}</Text>
                     )}
 
                     <MaterialCommunityIcons
