@@ -7,16 +7,18 @@ import TextInput from "../TextInput";
 function AppFormField({ name, width, ...otherProps }) {
 	const {
 		setFieldTouched,
-		handleChange,
+		setFieldValue,
 		errors,
 		touched,
+		values,
 	} = useFormikContext();
 
 	return (
 		<>
 			<TextInput
 				onBlur={() => setFieldTouched(name)}
-				onChangeText={handleChange(name)}
+				onChangeText={(text) => setFieldValue(name, text)}
+				value={values[name]}
 				width={width}
 				{...otherProps}
 			/>
