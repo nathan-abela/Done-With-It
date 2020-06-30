@@ -14,7 +14,7 @@ function WelcomeScreen({ navigation }) {
 			<View style={styles.logoContainer}>
 				<Image
 					style={styles.logo}
-					source={require("../assets/logo-red.png")}
+					source={require("../assets/logo.png")}
 				/>
 				<Text style={styles.tagline}>Sell What You Don't Need</Text>
 			</View>

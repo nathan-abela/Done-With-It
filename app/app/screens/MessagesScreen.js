@@ -11,16 +11,29 @@ import {
 const initialMessages = [
 	{
 		id: 1,
-		title: "Nathan Abela",
+		title: "Ashley Schembri",
 		description: "Hi! Is this item still available?",
-		image: require("../assets/user.jpg"),
+		image: require("../assets/user1.jpg"),
 	},
 	{
 		id: 2,
-		title: "Nathan Abela",
+		title: "Paul Borg",
 		description:
-			"I'm interested in this item. When will you be able to post it?",
-		image: require("../assets/user.jpg"),
+			"I'm interested in this item. When will you be able to deliver it?",
+		image: require("../assets/user2.jpg"),
+	},
+	{
+		id: 3,
+		title: "Jessica Fenech",
+		description: "Hello, are you still selling the Canon 400D Camera?",
+		image: require("../assets/user3.jpg"),
+	},
+	{
+		id: 4,
+		title: "Ryan Scibberas",
+		description:
+			"When can I come pick up the couch? Pickup is not an issue.",
+		image: require("../assets/user4.jpg"),
 	},
 ];
 
@@ -57,9 +70,24 @@ function MessagesScreen(props) {
 					setMessages([
 						{
 							id: 2,
-							title: "T2",
-							description: "D2",
-							image: require("../assets/user.jpg"),
+							title: "Paul Borg",
+							description:
+								"I'm interested in this item. When will you be able to deliver it?",
+							image: require("../assets/user2.jpg"),
+						},
+						{
+							id: 3,
+							title: "Jessica Fenech",
+							description:
+								"Hello, are you still selling the Canon 400D Camera?",
+							image: require("../assets/user3.jpg"),
+						},
+						{
+							id: 4,
+							title: "Ryan Scibberas",
+							description:
+								"When can I come pick up the couch? Pickup is not an issue.",
+							image: require("../assets/user4.jpg"),
 						},
 					]);
 				}}
