@@ -1,8 +1,8 @@
 <!-- Application Logo -->
 <p align="center" style="margin-bottom: -20px">
-    <a href="https://expo.io/@nathanabela/donewithit">
-        <img src="./App/app/assets/logo.png" height="100" alt="Done With It Logo"/>
-    </a>
+    <!-- <a href="https://expo.io/@nathanabela/donewithit"> -->
+        <img src="app/app/assets/logo.png" height="100" alt="Done With It Logo"/>
+    <!-- </a> -->
     <h1 align="center"> Done With It </h1>
 </p>
 
