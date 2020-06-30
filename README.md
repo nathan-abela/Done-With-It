@@ -1,7 +1,7 @@
 <!-- Application Logo -->
-<p align="center" style="margin-bottom: -10px">
+<p align="center" style="margin-bottom: -20px">
     <a href="https://expo.io/@nathanabela/donewithit">
-        <img src="./app/assets/logo-red.png" height="100" alt="Done With It Logo"/>
+        <img src="./App/app/assets/logo.png" height="100" alt="Done With It Logo"/>
     </a>
     <h1 align="center"> Done With It </h1>
 </p>
