@@ -1,6 +1,6 @@
 {
 	"expo": {
-		"name": "DoneWithIt",
+		"name": "Done With It",
 		"slug": "donewithit",
 		"platforms": ["ios", "android", "web"],
 		"version": "1.0.0",
