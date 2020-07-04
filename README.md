@@ -1,17 +1,14 @@
-<!-- Application Logo -->
 <p align="center">
     <a href="https://expo.io/@nathanabela/donewithit">
-        <img src="app/app/assets/logo.png" height="100" alt="Done With It Logo"/>
+        <img src="app/app/assets/logo.png" width="100" alt="Done With It Logo"/>
     </a>
     <h1 align="center"> Done With It </h1>
 </p>
 
-<!-- Application Description -->
 <p align="center">
     An application for selling stuff you do not need anymore.
 </p>
 
-<!-- Shield GitHub Badges -->
 <p align="center">
     <a href="https://github.com/nathan-abela/Done-With-It/commits/master">
         <img src="https://img.shields.io/github/last-commit/nathan-abela/Done-With-It" alt="Last Commit Shield Badge"/>
@@ -27,7 +24,6 @@
     </a>
 </p>
 
-<!-- Repository Description -->
 <p align="center">
     This repository consists of a <strong>React Native Marketplace Application</strong> built with <strong>Expo CLI</strong>.
 </p>
@@ -40,7 +36,13 @@
 
 ### View the application
 
-Scan [QR Code](https://expo.io/@nathanabela/donewithit) via the Expo mobile app, or by using [Appetize Emulator](https://expo.io/appetize-simulator?url=https://expo.io/@nathanabela/donewithit) (`Scroll down` &#8594; `Open project using Expo`).
+Scan [QR Code](https://expo.io/@nathanabela/donewithit) via the [Expo mobile app](https://play.google.com/store/apps/details?id=host.exp.exponent), or by using [Appetize Emulator](https://expo.io/appetize-simulator?url=https://expo.io/@nathanabela/donewithit) (`Scroll down` &#8594; `Open project using Expo`).
+
+### App Showcase
+
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/50643013/86519436-07b6f480-be3b-11ea-9be2-19e5010dd1c8.jpg" width="1280" alt="Done With It Screens Mockup"/>
+</p>
 
 ### Running the application on your machine
 
@@ -91,6 +93,6 @@ To run the application on your machine, follow the steps below:
 
 <p align="center">
     <a href="https://expo.io/@nathanabela/donewithit">
-        <img src="app/app/assets/logo.png" height="50" alt="Done With It Logo"/>
+        <img src="app/app/assets/logo.png" width="50" alt="Done With It Logo"/>
     </a>
 </p>
